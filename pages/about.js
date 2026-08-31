@@ -128,36 +128,8 @@ const Page2 = () => {
         <>
             <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
                 <Image
-                    src='/images/Kait.jpg'
-                    height={480}
-                    width={640}
-                />
-            </div>
-        </>
-    )
-}
-
-const Page3 = () => {
-    return (
-        <>
-            <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
-                <Image
                     src='/images/Pup.jpg'
                     height={853}
-                    width={640}
-                />
-            </div>
-        </>
-    )
-}
-
-const Page4 = () => {
-    return (
-        <>
-            <div style={{ padding: '1em', border: '1px solid lightgray', boxShadow: '5px 6px 1em black', borderRadius: '7.5px' }}>
-                <Image
-                    src='/images/Family.jpg'
-                    height={427}
                     width={640}
                 />
             </div>
@@ -168,16 +140,12 @@ const Page4 = () => {
 const components = {
     'page1': Page1,
     'page2': Page2,
-    'page3': Page3,
-    'page4': Page4
 }
 
 const About = () => {
     const [pages] = useState([
         <components.page1 />,
-        <components.page2 />,
-        <components.page3 />,
-        <components.page4 />
+        <components.page2 />
     ])
 
     return (
